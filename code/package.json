@@ -1,0 +1,17 @@
+{
+  "name": "rep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "doc":"jsdoc -c config.json"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsdoc": "^4.0.4",
+    "prompt-sync": "^4.2.0"
+  }
+}
