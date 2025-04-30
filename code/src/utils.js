@@ -51,3 +51,30 @@ export function accessoAdmin(cred){
 
    return tentUser === cred.user && tentPass === cred.pass;
 }
+
+export function accessoUser(tentUser,elenco){
+
+  
+   
+  let trovato=elenco.some(u => u.user === tentUser)
+
+  if(!trovato)
+    return -1
+  
+
+
+    let utente=trova(tentUser,elenco)
+    let tentPass=Prompt("inserire password > : ")
+  
+  if(utente.pass===tentPass)
+    return 1
+  else
+    return -2
+
+ 
+}
+
+export function trova(user,elenco)
+{
+  return elenco.find(u => u.user === user)
+}
